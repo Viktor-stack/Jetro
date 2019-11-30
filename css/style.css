@@ -1,0 +1,349 @@
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+p{
+  margin: 0;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+}
+.header {
+  
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.container__nav{
+  max-width: 960px;
+  min-height: 136px;
+  margin: 0 auto;
+}
+.header__inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0 23px;
+}
+.header__logo a{
+  color: #f3af9d;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 36px;
+}
+.header__logo span{
+  color: #e8603c;
+}
+.header__menu {
+  list-style: none;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 21px;
+}
+.header__menu a{
+  color: #b9b9b9;
+}
+.header__menu a:hover{
+  color: #e8663c;
+  transition: all 0.5s;
+}
+.header__menu li{
+  display: inline-block;
+}
+.header__menu li + li{
+  padding-left: 28px;
+}
+.header__menu-btn{
+  margin: 10px;
+  display: none;
+  width: 30px;
+}
+.header__menu-row{
+  width: 100%;
+  background-color: #b9b9b9;
+  height: 4px;
+  margin-bottom: 4px;
+}
+.header__menu-btn:hover{
+  background-color: #e8603c;
+  transition: all 0.5s;
+}
+.slider {
+  margin-bottom: 23px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__inner::before{
+  position: absolute;
+  content: '';
+  width: 500px;
+  height: 61px;
+  background-color: rgba(232, 96, 60, 0.502);
+  top: 0;
+  left: -510px;
+}
+.slider__inner::after{
+  position: absolute;
+  content: '';
+  width: 500px;
+  height: 61px;
+  background-color: rgba(232, 96, 60, 0.502);
+  top: 0;
+  right: -510px;
+}
+.slick-next::before{
+  content: '';
+}
+.slick-prev::before{
+  content: '';
+}
+.slick-prev{
+  width: 0;
+  height: 0;
+  top: 130px;
+  left: 30px;
+  z-index: 1;
+}
+.slick-next {
+  width: 0;
+  height: 0;
+  top: 152px;
+  right: 25px;
+}
+.slick-next img{
+  position: absolute;
+  right: 0;
+}
+.slider__items {
+  position: relative;
+  min-height: 401px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.slider__items-desc{
+  position: absolute;
+  background-color: rgba(232, 102, 60, 0.8);
+  display: inline-block;
+  bottom: 34px;
+  left: 34px;
+  max-width: 414px;
+  color: #ffffff;
+  padding: 20px 16px 20px;
+}
+.slider__items-title{
+  margin-bottom: 23px;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: 'Bebas Neue', cursive;
+}
+.slider__items-text {
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.slider__nav__img{
+  width: 140px;
+  min-height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 17px 10px;
+}
+
+/* Вариант 2й для навигацыии слайдера
+.slider__nav{
+  
+}
+.slider__nav img{
+  margin: 17px 10px;
+} */
+
+.content {
+  margin-bottom: 46px;
+}
+.content__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.content__items {
+  width: 271px;
+}
+.content__items-title {
+  color: #e8603c;
+  padding-left: 95px;
+  padding-right: 40px;
+  margin-bottom: 37px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  line-height: 25px;
+  position: relative;
+}
+.content__items-icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 5px;
+}
+.content__items-text {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 22px;
+}
+.content__items-btn a{
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px 15px 10px 15px;
+  background-color: #e8603c;
+  display: inline-block;
+  font-family: 'Bebas Neue', cursive;
+}
+.works {
+  margin-bottom: 49px;
+  overflow: hidden;
+}
+.works__title {
+  color: #e8603c;
+  font-size: 23px;
+  font-family: 'Bebas Neue', cursive;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+  
+}
+.works__title::after {
+  content: '';
+  width: 810px;
+  height: 19px;
+  position: absolute;
+  background-color: rgba(219, 217, 217, 0.180);
+  right: -835px;;
+  top: 3px;
+}
+.works__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.wokrs__items {
+  display: flex;
+  flex-direction: column;
+  color: #b9b9b9;
+}
+.wokrs__items-box {
+  padding: 13px 13px 14px;
+  width: 220px;
+  height: 61px;
+  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+.works__items-title {
+  font-size: 20px;
+  line-height: 18px;
+  font-family: 'Bebas Neue', cursive;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.works__items-date {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: 'Bebas Neue', cursive;
+  color: #e8603c;
+}
+.footer {
+  position: relative;
+  overflow: hidden;
+}
+.footer__inner {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 38px 35px 31px;
+  background-color: #e8603c;
+  position: relative;
+}
+.footer__inner::before{
+  content: '';
+  width: 500px;
+  height: 100%; 
+  position: absolute;
+  background-color: rgba(232, 102, 60, 0.502);
+  bottom: 0;
+  left: -510px;
+}
+.footer__inner::after{
+  content: '';
+  width: 500px;
+  height: 100%; 
+  position: absolute;
+  background-color: rgba(232, 102, 60, 0.502);
+  bottom: 0;
+  right: -510px;
+}
+.footer__items {
+  padding: 5px;
+  width: 268px;
+}
+.footer__items p{
+  margin-bottom: 19px;
+}
+.footer__items-title {
+  font-size: 20px;
+  font-family: 'Bebas Neue', cursive;
+  margin-bottom: 28px;
+}
+.footer__items-twitter {
+  padding: 5px;
+  width: 220px;
+}
+.items__twitter-desc {
+  line-height: 14px;
+  margin-bottom: 24px;
+}
+.items__twitter-desc span{
+  display: block;
+  color: #f1b09b;
+  padding-top: 9px;
+}
+.mailing__address{
+  color: #f1b09b;
+}
+.items__twitter-desc + .items__twitter-desc{
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+.footer__items-contackt {
+  padding: 5px;
+  width: 276px;
+}
+.footer__items-contackt__desc {
+  padding-bottom: 19px;
+}
+.footer__itens-info{
+  padding-bottom: 20px;
+}
+.footer__itens-info span{
+  display: block;
+}
+.footer__items-cohal a + a{
+  padding-left: 5px;
+}
